@@ -1,0 +1,38 @@
+  name: GatorGrader
+
+  on:
+    push:
+      branches: [ main ]
+
+  jobs:
+    grade:
+      runs-on: ubuntu-latest
+      env:
+        API: ${{ secrets.API }}
+        API_SECRET: ${{ secrets.API_SECRET }}
+        ACCESS: ${{ secrets.ACCESS }}
+        ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+      steps:
+      - uses: actions/checkout@v2
+        with: 
+          fetch-depth: '0'
+      - name: Setup Python
+        if: always()
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Set up grading environment
+        run: |
+          sudo apt-get install rename
+          pip install --upgrade pip
+          pip install pipenv
+          pip install notebook
+          pip install tweepy
+          pipenv install --dev --three
+      - name: Grade repository
+        run: |
+          gradle grade
+        if: always()
+        env:   
+         PIPENV_VENV_IN_PROJECT: 1
+         PIPENV_IGNORE_VIRTUALENVS: 1
