@@ -2,11 +2,11 @@
 
 ## Title
 
-`TODO: Working project title`
+Daily Song Recommendation Bot
 
 ## Description of project
 
-`TODO`
+Need to see if Spotify has an API.
 
 ### Classification
 
