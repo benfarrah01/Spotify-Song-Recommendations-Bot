@@ -6,28 +6,28 @@ Daily Song Recommendation Bot
 
 ## Description of project
 
-Need to see if Spotify has an API.
+We will use Spotify's API in order to obtain a song that will be recommended once per day.
 
 ### Classification
 
 Place an `x` in the appropriate `[ ]` below.
 
-- [ ] Uncreative
-- [ ] Procedural
+- [x] Uncreative
+- [X] Procedural
 - [ ] Data-driven
 - [ ] Graffiti
 
 ### If you plan to use any data sources, what are they and why?
 
-`TODO`
+We will be using Spotify API in order to obtain the data (the song names and artist) for the daily tweet.
 
 ### Tentative description of ideal output
 
-`TODO`
+The output will be the song name and the artist name together.
 
 ## Statement of motivation/interest
 
-`TODO`
+Everyone likes music. 
 
 ## Perceived or realized challenges
 
