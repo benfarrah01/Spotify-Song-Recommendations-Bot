@@ -27,7 +27,9 @@ The output will be the song name and the artist name together.
 
 ## Statement of motivation/interest
 
+
 Everyone likes music and being able to listen to new music that is recommended to them. This bot would give us motivation to. give people that ability to find new music they love and find new interests.
+
 
 ## Perceived or realized challenges
 
