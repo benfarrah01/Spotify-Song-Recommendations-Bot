@@ -2,32 +2,32 @@
 
 ## Title
 
-`TODO: Working project title`
+Daily Song Recommendation Bot
 
 ## Description of project
 
-`TODO`
+We will use Spotify's API in order to obtain a song that will be recommended once per day. In the tweet, we will include the name of the song and then the artist singing. Also we may have to say if the song is explict, meaning there is offensive language in the song.
 
 ### Classification
 
 Place an `x` in the appropriate `[ ]` below.
 
-- [ ] Uncreative
-- [ ] Procedural
+- [x] Uncreative
+- [X] Procedural
 - [ ] Data-driven
 - [ ] Graffiti
 
 ### If you plan to use any data sources, what are they and why?
 
-`TODO`
+We will be using Spotify API in order to obtain the data (the song names and artist) for the daily tweet. The API holds numerous songs with many kinds of artist and bands. The API is run by Spotfy which is a music streaming outlet. They are one of the most popular sites to gather and listen to music.
 
 ### Tentative description of ideal output
 
-`TODO`
+The output will be the song name and the artist name together.
 
 ## Statement of motivation/interest
 
-`TODO`
+Everyone likes music. 
 
 ## Perceived or realized challenges
 
