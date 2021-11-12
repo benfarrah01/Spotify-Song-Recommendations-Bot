@@ -31,7 +31,7 @@ Everyone likes music.
 
 ## Perceived or realized challenges
 
-`TODO`
+Some possible challenges of this bot could be figuring out how to access the API. Of course there will probably be minor hiccups with the actual code side of it, but we will fix those as we go. We've already had a little trouble adjusting to sharing code with each other over GitHub, but hopefully we all get more comfortable with that as we continue to work through this project.
 
 ## Comment below on the ethical challenges that your concept faces.
 
