@@ -27,12 +27,14 @@ The output will be the song name and the artist name together.
 
 ## Statement of motivation/interest
 
-Everyone likes music. 
+
+Everyone likes music and being able to listen to new music that is recommended to them. This bot would give us motivation to. give people that ability to find new music they love and find new interests.
+
 
 ## Perceived or realized challenges
 
-`TODO`
+Some possible challenges of this bot could be figuring out how to access the API. Of course there will probably be minor hiccups with the actual code side of it, but we will fix those as we go. We've already had a little trouble adjusting to sharing code with each other over GitHub, but hopefully we all get more comfortable with that as we continue to work through this project.
 
 ## Comment below on the ethical challenges that your concept faces.
 
-`TODO`
+The ethical challenges we may face are artist misconduct, explicit content, and spotify copyrights. We will make it obvious our tweets are coming from a bot and are pulled from spotify. We will also make sure any explicit content has a warning to viewers.
