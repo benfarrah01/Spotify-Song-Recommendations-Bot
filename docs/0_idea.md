@@ -35,4 +35,4 @@ Some possible challenges of this bot could be figuring out how to access the API
 
 ## Comment below on the ethical challenges that your concept faces.
 
-`TODO`
+The ethical challenges we may face are artist misconduct, explicit content, and spotify copyrights. We will make it obvious our tweets are coming from a bot and are pulled from spotify. We will also make sure any explicit content has a warning to viewers.
