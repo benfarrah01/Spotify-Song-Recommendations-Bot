@@ -3,15 +3,6 @@
 import json
 import tweepy
 
-def load_credentials():
-    """Load keys file"""
-    # Find the test accounts credentials, open them
-    file = open("../.secrets/100-keys.json")
-    # Parse JSON in file
-    credentials = json.load(file)
-    # Return credentials
-    return credentials
-
 def tweet(message):
     """Handles authentication and tweeting."""
     # "Log in"
