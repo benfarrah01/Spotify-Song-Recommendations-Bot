@@ -20,6 +20,10 @@ def tweet(message):
 
 def main():
     """Entry point"""
+    # message = f"   "
+    # text = tweet(message)
+    
+    
     pass
 
 if __name__ == "__main__":
