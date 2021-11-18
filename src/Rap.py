@@ -10,6 +10,6 @@ client = spotify.Client(CLIENT, SECRET)
 result = client.search('RapCaviar', types=['playlist'])
 
 for playlist in result.playlists:
-    print(playlist)
+    print(dir(playlist))
 
 client.close()
