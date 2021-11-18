@@ -19,7 +19,7 @@
 
 ## Celebrate your successes. What are they?
 
-`TODO`
+We got our developer id for the Spotify API. This was a huge step for group because all we need now is to 
 
 ## Highlight your group's most significant on-going challenge. How do you think you might solve it?
 
