@@ -1,4 +1,5 @@
 import os
+import random
 import spotify.sync as spotify
 
 CLIENT = os.getenv('FF_SPOTIFY_CLIENT')
