@@ -6,12 +6,13 @@ CLIENT = os.getenv('FF_SPOTIFY_CLIENT')
 SECRET = os.getenv('FF_SPOTIFY_CLIENT_SECRET')
 
 client = spotify.Client(CLIENT, SECRET)
-result = client.search('Today/s Top Hits', types=['playlist'])
+result = client.search('', types=['playlist'],limit=10)
+
 
 for playlist in result.playlists:
     tracks = playlist.get_all_tracks()
     track = random.choice(tracks)
-    print(f"We recommend {track.name} by {track.artist.name} to listen to!")
-
+    print(track.popularity)
+    print(f"This weekend, listen to {track.name} by {track.artist.name}. It's good.")
+    
 client.close()
-
