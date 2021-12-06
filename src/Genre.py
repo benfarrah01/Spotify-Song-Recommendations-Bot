@@ -3,6 +3,7 @@ import random
 import json
 import spotify.sync as spotify
 
+
 def load_file(filename):
     fh = open(filename, "r")
     data = json.load(fh)
@@ -11,9 +12,8 @@ def load_file(filename):
 def pick_one(data):
     return random.choice(data)
 
-def main():
+def get_song():
     genre = load_file("data/genres.json")
-    print("loaded")
     genre = genre["genres"]
     
     genre = pick_one(genre)
@@ -23,16 +23,17 @@ def main():
     SECRET = os.getenv('FF_SPOTIFY_CLIENT_SECRET')
 
     client = spotify.Client(CLIENT, SECRET)
-    result = client.search(genre, types=['playlist'],limit=20)
-
-
+    result = client.search(genre, types=['playlist'],limit=5)
+    
+    songs = {}
     for playlist in result.playlists:
         tracks = playlist.get_all_tracks()
         track = random.choice(tracks)
-        print(f"This weekend, listen to {track.name} by {track.artist.name}. It's good.")
-    
+        songs[f'{track.name}'] = track.popularity
+    print(songs)
+    song = max(songs, key=songs.get)
     client.close()
-if __name__ == "__main__":
-    main()
+    return song
+
 
     

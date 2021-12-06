@@ -2,6 +2,7 @@
 
 import json
 import tweepy
+import Genre
 
 def tweet(message):
     """Handles authentication and tweeting."""
@@ -20,8 +21,8 @@ def tweet(message):
 
 def main():
     """Entry point"""
-    # message = f"   "
-    # text = tweet(message)
+    print(Genre.get_song())
+    #text = tweet(message)
     
     
     pass
