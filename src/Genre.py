@@ -20,7 +20,7 @@ def get_song():
     genre = load_file("data/genres.json")
     genre = genre["genres"]
     genre = pick_one(genre)
-    print(genre)
+    #print(genre)
 
     CLIENT = os.getenv('FF_SPOTIFY_CLIENT')
     SECRET = os.getenv('FF_SPOTIFY_CLIENT_SECRET')
