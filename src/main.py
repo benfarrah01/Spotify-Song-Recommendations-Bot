@@ -21,10 +21,9 @@ def tweet(message):
 
 def main():
     """Entry point"""
-    print(Genre.get_song())
+    song = Genre.get_song()
+    print(song["artist"], song["title"])
     #text = tweet(message)
-    
-    
     pass
 
 if __name__ == "__main__":

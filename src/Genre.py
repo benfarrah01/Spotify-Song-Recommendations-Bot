@@ -14,7 +14,7 @@ def pick_one(data):
     return random.choice(data)
 
 def most_popular(songs):
-    return max(songs['popularity'], key=lambda x:x['popularity'])
+    return max(songs, key=lambda x:x['popularity'])
 
 def get_song():
     genre = load_file("data/genres.json")
@@ -33,11 +33,9 @@ def get_song():
         tracks = playlist.get_all_tracks()
         track = random.choice(tracks)
         songs.append(Song(track).song_as_dict())
-        song = most_popular(songs)
-    print(songs)
-    print(song)
+    song = most_popular(songs)
     client.close()
-    #return song
+    return song
 
 
     
