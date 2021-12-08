@@ -3,6 +3,7 @@
 import json
 import tweepy
 import Genre
+import os
 
 def tweet(message):
     """Handles authentication and tweeting."""
@@ -21,10 +22,10 @@ def tweet(message):
 
 def main():
     """Entry point"""
-    print(Genre.get_song())
-    #text = tweet(message)
-    
-    
+    song = Genre.get_song()
+    message = (f'Your Daily Song is: \n{song["title"]} sang by {song["artist"]}')
+    #print(message)
+    text = tweet(message)
     pass
 
 if __name__ == "__main__":
