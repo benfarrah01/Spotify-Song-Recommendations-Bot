@@ -13,11 +13,14 @@ def load_file(filename):
 def pick_one(data):
     return random.choice(data)
 
+def most_popular(songs):
+    return max(songs['popularity'], key=lambda x:x['popularity'])
+
 def get_song():
     genre = load_file("data/genres.json")
     genre = genre["genres"]
     genre = pick_one(genre)
-    #print(genre)
+    print(genre)
 
     CLIENT = os.getenv('FF_SPOTIFY_CLIENT')
     SECRET = os.getenv('FF_SPOTIFY_CLIENT_SECRET')
@@ -30,7 +33,8 @@ def get_song():
         tracks = playlist.get_all_tracks()
         track = random.choice(tracks)
         songs.append(Song(track).song_as_dict())
-
+        song = most_popular(songs)
+    print(songs)
     print(song)
     client.close()
     #return song
