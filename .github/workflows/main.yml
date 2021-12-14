@@ -12,6 +12,8 @@
         API_SECRET: ${{ secrets.API_SECRET }}
         ACCESS: ${{ secrets.ACCESS }}
         ACCESS_SECRET: ${{ secrets.ACCESS_SECRET }}
+        FF_SPOTIFY_CLIENT: ${{ secrets.FF_SPOTIFY_CLIENT }}
+        FF_SPOTIFY_CLIENT_SECRET: ${{ secrets.FF_SPOTIFY_CLIENT_SECRET }}
       steps:
       - uses: actions/checkout@v2
         with: 
