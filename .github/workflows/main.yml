@@ -31,7 +31,7 @@
           pip install notebook
           pip install tweepy
           pipenv install --dev --three
-          cd src && python main.py
+          pip install spotify
       - name: Grade repository
         run: |
           gradle grade
