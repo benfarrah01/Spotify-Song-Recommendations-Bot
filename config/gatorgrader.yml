@@ -11,6 +11,6 @@ docs/1_progress.md:
     MatchFileFragment --fragment "TODO" --count 0 --exact --description "[PROGRESS REPORT] No TODOs"
 
 docs/2_final-report.md:
-    MatchFileFragment --fragment "TODO" --count 1 --exact --description "[FINAL REPORT] No TODOs"
+    MatchFileFragment --fragment "TODO" --count 0 --exact --description "[FINAL REPORT] No TODOs"
     
 ExecuteCommand --command "cd src && python main.py" --description "[PROJECT PROGRAM] Executes correctly"
