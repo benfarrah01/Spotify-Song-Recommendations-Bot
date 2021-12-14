@@ -31,6 +31,7 @@
           pip install notebook
           pip install tweepy
           pipenv install --dev --three
+          cd src && python main.py
       - name: Grade repository
         run: |
           gradle grade
