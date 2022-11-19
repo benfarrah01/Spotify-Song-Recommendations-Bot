@@ -1,4 +1,4 @@
-# CMPSC 100: Fall 2021, Course Project
+# Daily Spotify Song Recommendations Twitter Bot
 
 * Distributed: 3 November
 * Due: Various dates (see [requirements](#Requirements) below)
